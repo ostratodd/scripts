@@ -23,10 +23,12 @@ for record in SeqIO.parse(file, "fasta"):
     else:
         long_sequences.append(record)
 
-print("Found %i short sequences" % len(short_sequences))
 shortfile = 'short' + str(min) + '_' + str(file)
-SeqIO.write(short_sequences, shortfile, "fasta")
+print("Found %i short sequences" % len(short_sequences))
+if len(short_sequences) > 0:
+    SeqIO.write(short_sequences, shortfile, "fasta")
 
-print("Found %i long sequences" % len(long_sequences))
 longfile = 'long' + str(min) + '_' + str(file)
-SeqIO.write(long_sequences, longfile, "fasta")
+print("Found %i long sequences" % len(long_sequences))
+if len(long_sequences) > 0:
+    SeqIO.write(long_sequences, longfile, "fasta")
