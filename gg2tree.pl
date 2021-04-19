@@ -21,6 +21,7 @@ while (my $row = <$fh>) {
 #		print $og[0]."\n";
 		system "cp sortadate/$field[0] clocktrees/";
 		system "cp sortadate/$og[0].raln.fa clockgenes/";
+		system "cp sortadate/$og[0].pppft.treefile clocktrees/";
 	}
 }
 
