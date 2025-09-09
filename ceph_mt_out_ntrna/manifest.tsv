@@ -1,0 +1,16 @@
+gene	feature_types	count
+atp6	CDS	47
+atp8	CDS	47
+cob	CDS	39
+cox1	CDS	47
+cox2	CDS	46
+cox3	CDS	46
+nad1	CDS	39
+nad2	CDS	39
+nad3	CDS	39
+nad4	CDS	39
+nad4l	CDS	38
+nad5	CDS	39
+nad6	CDS	39
+rrnL	rRNA	39
+rrnS	rRNA	39
