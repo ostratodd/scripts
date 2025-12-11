@@ -1,0 +1,115 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    osiris (AVX, 62 GB RAM)
+Command: iqtree2 -s all_bivalve_opsins_renamed_aligned.fa -st AA -m LG+G4 -nt AUTO -pre bivalve_opsins_cleaned
+Seed:    105066 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Dec 11 09:40:33 2025
+Kernel:  AVX - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file all_bivalve_opsins_renamed_aligned.fa ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 12 sequences with 1177 columns, 750 distinct patterns
+401 parsimony-informative, 256 singleton sites, 520 constant sites
+                                        Gap/Ambiguity  Composition  p-value
+   1  Mytilus_californianus_XP_052069431_1     49.53%    failed      1.68%
+   2  Bathymodiolus_sp_Bpl_scaf_38266-2.5      51.49%    passed      8.69%
+   3  Bathymodiolus_sp_Bpl_scaf_38266-1.1      31.52%    passed     90.82%
+   4  Argopecten_irradians_XP_069134776_1      57.69%    passed     99.06%
+   5  Argopecten_irradians_XP_069134775_1      57.69%    passed     99.06%
+   6  Saccostrea_cuccullata_XP_062568460_1     65.85%    failed      1.09%
+   7  Ylistrum_balloti_XP_060072051_1          64.49%    passed     79.59%
+   8  Ostrea_edulis_XP_056022124_1             69.33%    passed     98.74%
+   9  Ostrea_edulis_XP_048755536_2             62.53%    passed     15.88%
+  10  Magallana_angulata_XP_052701448_1        69.84%    passed     12.57%
+  11  Magallana_angulata_XP_052700036_1        70.86%    passed     44.70%
+  12  Mizuhopecten_yessoensis_XP_021360283_1   68.22%    passed     32.12%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                    59.92%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Argopecten_irradians_XP_069134775_1 is identical to Argopecten_irradians_XP_069134776_1 but kept for subsequent analysis
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.003 seconds
+
+NOTE: 5 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 16 CPU cores
+Increase to 10 rounds for branch lengths
+92 trees examined
+Threads: 1 / Time: 16.109 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -13336
+Threads: 2 / Time: 8.459 sec / Speedup: 1.904 / Efficiency: 95% / LogL: -13336
+Threads: 3 / Time: 6.448 sec / Speedup: 2.498 / Efficiency: 83% / LogL: -13336
+Threads: 4 / Time: 5.126 sec / Speedup: 3.142 / Efficiency: 79% / LogL: -13336
+Threads: 5 / Time: 4.321 sec / Speedup: 3.728 / Efficiency: 75% / LogL: -13336
+Threads: 6 / Time: 4.046 sec / Speedup: 3.982 / Efficiency: 66% / LogL: -13336
+Threads: 7 / Time: 4.376 sec / Speedup: 3.681 / Efficiency: 53% / LogL: -13336
+Threads: 8 / Time: 4.769 sec / Speedup: 3.378 / Efficiency: 42% / LogL: -13336
+BEST NUMBER OF THREADS: 6
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -13949.110
+2. Current log-likelihood: -12684.777
+3. Current log-likelihood: -12672.627
+4. Current log-likelihood: -12670.732
+5. Current log-likelihood: -12670.254
+6. Current log-likelihood: -12670.149
+Optimal log-likelihood: -12670.106
+Gamma shape alpha: 3.054
+Parameters optimization took 6 rounds (0.175 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.005143 sec (of wall-clock time) 0.037073 sec(of CPU time)
+Computing RapidNJ tree took 0.000307 sec (of wall-clock time) 0.001514 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -12686.289
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.168 second
+Computing log-likelihood of 95 initial trees ... 0.472 seconds
+Current best score: -12670.106
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -12667.821
+Iteration 10 / LogL: -12667.828 / Time: 0h:0m:55s
+Iteration 20 / LogL: -12667.924 / Time: 0h:0m:55s
+Finish initializing candidate tree set (1)
+Current best tree score: -12667.821 / CPU time: 2.046
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -12667.820
+Iteration 30 / LogL: -12667.832 / Time: 0h:0m:56s (0h:2m:18s left)
+Iteration 40 / LogL: -12667.898 / Time: 0h:0m:57s (0h:1m:29s left)
+Iteration 50 / LogL: -12667.852 / Time: 0h:0m:58s (0h:1m:0s left)
+Iteration 60 / LogL: -12667.912 / Time: 0h:0m:58s (0h:0m:40s left)
+Iteration 70 / LogL: -12667.871 / Time: 0h:0m:59s (0h:0m:26s left)
+Iteration 80 / LogL: -12668.231 / Time: 0h:1m:0s (0h:0m:16s left)
+Iteration 90 / LogL: -12668.055 / Time: 0h:1m:1s (0h:0m:7s left)
+Iteration 100 / LogL: -12667.840 / Time: 0h:1m:1s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:1m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -12667.820
+Optimal log-likelihood: -12667.820
+Gamma shape alpha: 3.063
+Parameters optimization took 1 rounds (0.012 sec)
+BEST SCORE FOUND : -12667.820
+Total tree length: 16.097
+
+Total number of iterations: 102
+CPU time used for tree search: 48.156 sec (0h:0m:48s)
+Wall-clock time used for tree search: 8.075 sec (0h:0m:8s)
+Total CPU time used: 237.694 sec (0h:3m:57s)
+Total wall-clock time used: 62.009 sec (0h:1m:2s)
+
+Analysis results written to: 
+  IQ-TREE report:                bivalve_opsins_cleaned.iqtree
+  Maximum-likelihood tree:       bivalve_opsins_cleaned.treefile
+  Likelihood distances:          bivalve_opsins_cleaned.mldist
+  Screen log file:               bivalve_opsins_cleaned.log
+
+Date and Time: Thu Dec 11 09:41:35 2025

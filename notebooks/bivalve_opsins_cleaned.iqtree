@@ -1,0 +1,93 @@
+IQ-TREE 2.1.2 COVID-edition built Oct 22 2020
+
+Input file name: all_bivalve_opsins_renamed_aligned.fa
+Type of analysis: tree reconstruction
+Random seed number: 105066
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 12 sequences with 1177 amino-acid sites
+Number of constant sites: 520 (= 44.1801% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 520 (= 44.1801% of all sites)
+Number of parsimony informative sites: 401
+Number of distinct site patterns: 750
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 3.0630
+
+ Category  Relative_rate  Proportion
+  1         0.3941         0.2500
+  2         0.7350         0.2500
+  3         1.0828         0.2500
+  4         1.7881         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -12667.8201 (s.e. 315.7841)
+Unconstrained log-likelihood (without tree): -7015.1494
+Number of free parameters (#branches + #model parameters): 22
+Akaike information criterion (AIC) score: 25379.6402
+Corrected Akaike information criterion (AICc) score: 25380.5171
+Bayesian information criterion (BIC) score: 25491.1961
+
+Total tree length (sum of branch lengths): 16.0969
+Sum of internal branch lengths: 2.6355 (16.3728% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Mytilus_californianus_XP_052069431_1' is drawn at root
+
++--Mytilus_californianus_XP_052069431_1
+|
++--Bathymodiolus_sp_Bpl_scaf_38266-2.5
+|
+|  +----Bathymodiolus_sp_Bpl_scaf_38266-1.1
++--|
+   |                                  +**Argopecten_irradians_XP_069134776_1
+   |            +---------------------|
+   |            |                     +**Argopecten_irradians_XP_069134775_1
+   |         +--|
+   |         |  |                      +-------------Ylistrum_balloti_XP_060072051_1
+   |         |  |               +------|
+   |         |  |               |      +------------------Mizuhopecten_yessoensis_XP_021360283_1
+   |         |  |            +--|
+   |         |  |            |  +-----------------------Ostrea_edulis_XP_048755536_2
+   |         |  |        +---|
+   |         |  |        |   +-------------------------Ostrea_edulis_XP_056022124_1
+   |         |  |     +--|
+   |         |  |     |  +----------------------------Magallana_angulata_XP_052701448_1
+   |         |  +-----|
+   |         |        +-----------------------------Magallana_angulata_XP_052700036_1
+   +---------|
+             +--------------------------Saccostrea_cuccullata_XP_062568460_1
+
+Tree in newick format:
+
+(Mytilus_californianus_XP_052069431_1:0.2129542694,Bathymodiolus_sp_Bpl_scaf_38266-2.5:0.2165908743,(Bathymodiolus_sp_Bpl_scaf_38266-1.1:0.3849294478,(((Argopecten_irradians_XP_069134776_1:0.0000010000,Argopecten_irradians_XP_069134775_1:0.0000010000):1.4408216603,(((((Ylistrum_balloti_XP_060072051_1:0.9687514307,Mizuhopecten_yessoensis_XP_021360283_1:1.2417603231):0.4955120096,Ostrea_edulis_XP_048755536_2:1.5958086622):0.2204433528,Ostrea_edulis_XP_056022124_1:1.7195050141):0.2749929344,Magallana_angulata_XP_052701448_1:1.9327480364):0.1567952450,Magallana_angulata_XP_052700036_1:1.9637916214):0.4088641912):0.1751027635,Saccostrea_cuccullata_XP_062568460_1:1.7836977603):0.7103641430):0.1934252300);
+
+TIME STAMP
+----------
+
+Date and time: Thu Dec 11 09:41:35 2025
+Total CPU time used: 237.694 seconds (0h:3m:57s)
+Total wall-clock time used: 62.0144 seconds (0h:1m:2s)
+
