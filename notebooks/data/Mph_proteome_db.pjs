@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "Mph_proteome_db",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "../data/Mph.maker_FilteredModels_proteins_v1.0.fasta",
+  "number-of-letters": 12883590,
+  "number-of-sequences": 36549,
+  "last-updated": "2025-12-12T17:03:00",
+  "number-of-volumes": 1,
+  "bytes-total": 16947389,
+  "bytes-to-cache": 13212676,
+  "files": [
+    "Mph_proteome_db.pdb",
+    "Mph_proteome_db.phr",
+    "Mph_proteome_db.pin",
+    "Mph_proteome_db.pot",
+    "Mph_proteome_db.psq",
+    "Mph_proteome_db.ptf",
+    "Mph_proteome_db.pto"
+  ]
+}

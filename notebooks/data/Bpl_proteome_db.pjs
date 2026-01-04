@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "Bpl_proteome_db",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "../data/Bpl.maker_FilteredModels_proteins_v1.0.fasta",
+  "number-of-letters": 12452217,
+  "number-of-sequences": 33584,
+  "last-updated": "2025-12-12T17:03:00",
+  "number-of-volumes": 1,
+  "bytes-total": 16204906,
+  "bytes-to-cache": 12754618,
+  "files": [
+    "Bpl_proteome_db.pdb",
+    "Bpl_proteome_db.phr",
+    "Bpl_proteome_db.pin",
+    "Bpl_proteome_db.pot",
+    "Bpl_proteome_db.psq",
+    "Bpl_proteome_db.ptf",
+    "Bpl_proteome_db.pto"
+  ]
+}
